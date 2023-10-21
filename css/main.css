@@ -149,8 +149,12 @@ a:hover {
 
 .sec-pic-container {
     position: relative;
-    width: 25vw;
-    height: 25vw;
+    width: 30vw;
+    min-width: 200px;
+    max-width: 300px;
+    height: 30vh;
+    min-height: 200px;
+    max-width: 300px;
     overflow: hidden;
     border-radius: 50%;
 }
@@ -173,7 +177,60 @@ a:hover {
 
 */
 
+/* Section Part */
 
+section {
+    padding-top: 2vh;
+    height: 96vh;
+    margin: 0 5rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
 
+.sec-container {
+    display: flex;
+}
 
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.sec-pic-container {
+    display: flex;
+    width: clamp(200px,30vw,300px);
+    height: clamp(200px,30vw,300px);
+    margin: auto 0;
+}
+
+.sec_text{
+    align-self: center;
+    text-align: center;
+}
+
+.sec_text_1 {
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+  }
+  
 
