@@ -147,9 +147,33 @@ a:hover {
     transform: rotate(45deg) translate(-10px, -5px);
 }
 
-img {
-    border-radius: 10%;
-    height: 20%;
-    width: 20%;
-  }
+.sec-pic-container {
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.sec-pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*
+.sec-pic-container img::after {
+    transform: scale(1.1) translateY(5%);
+    transition: all 0.5s ease-in-out;
+}
+
+.sec-pic-container img:hover:after {
+    transform: scale(1.5) translateY(-5%);
+}
+
+*/
+
+
+
+
 
