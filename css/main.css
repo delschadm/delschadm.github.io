@@ -182,7 +182,7 @@ a:hover {
 section {
     padding-top: 2vh;
     height: 96vh;
-    margin: 0 5rem;
+    margin: 0 0rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -213,6 +213,10 @@ section {
 .sec_text_1 {
     font-weight: bold;
     font-size: 1.75rem;
+    margin-bottom: 0rem;
+}
+
+.sec_text_2 {
     margin-bottom: 1rem;
 }
 
