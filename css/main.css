@@ -147,24 +147,6 @@ a:hover {
     transform: rotate(45deg) translate(-10px, -5px);
 }
 
-.sec-pic-container {
-    position: relative;
-    width: 30vw;
-    min-width: 200px;
-    max-width: 300px;
-    height: 30vh;
-    min-height: 200px;
-    max-width: 300px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.sec-pic-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 /*
 .sec-pic-container img::after {
     transform: scale(1.1) translateY(5%);
@@ -187,10 +169,6 @@ section {
     min-height: fit-content;
 }
 
-.sec-container {
-    display: flex;
-}
-
 #profile {
     display: flex;
     justify-content: center;
@@ -198,11 +176,28 @@ section {
     height: 80vh;
 }
 
-.sec-pic-container {
+.sec-container {
     display: flex;
+}
+
+.sec-pic-container {
+    position: relative;
     width: clamp(200px, 30vw, 300px);
     height: clamp(200px, 30vw, 300px);
+    overflow: hidden;
+    border-radius: 50%;
     margin: auto 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.sec-pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sec-pic-container:hover {
+    transform: scale(1.1);
 }
 
 .sec_text {
