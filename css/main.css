@@ -87,6 +87,7 @@ a:hover {
 .ham-menu {
     position: relative;
     display: inline-block;
+    z-index: 1;
 }
 
 .ham-icon {
