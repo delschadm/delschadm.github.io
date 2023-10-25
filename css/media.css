@@ -1,13 +1,3 @@
-@media screen and (max-width: 768px) {
-    #desktop-nav {
-        display: none;
-    }
-    #ham-nav {
-        display: flex;        
-    }
-}
-
-
 @media screen and (max-width: 1400px) {
     #profile {
       height: 83vh;
@@ -26,8 +16,8 @@
     #desktop-nav {
       display: none;
     }
-    #ham-nav {
-      display: flex;
+    label {
+      display: block;
     }
     #experience,
     .experience-details-container {

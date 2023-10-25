@@ -148,6 +148,9 @@ a:hover {
     transform: rotate(45deg) translate(-10px, -5px);
 } */
 
+label {
+    display: none;
+}
 
 label .menu {
     position: absolute;
