@@ -179,8 +179,8 @@ section {
 
 .section__pic-container img {
   display: inline;
-  width: clamp(225px,45vw,25vw);
-  height: clamp(225px,45vw,25vw);
+  width: clamp(200px,45vw,25vw);
+  height: clamp(200px,45vw,25vw);
   border-radius: 50%;
 
   object-fit: cover;
