@@ -15,19 +15,19 @@ html {
   scroll-behavior: smooth;
 }
 
-p {
+/* p {
   color: rgb(85, 85, 85);
 }
 
 /* TRANSITION */
 
-a,
+/* a,
 .btn {
   transition: all 300ms ease;
 }
-
+ */
 /* DESKTOP NAV */
-
+/* 
 nav,
 .nav-links {
   display: flex;
@@ -56,19 +56,150 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
-}
-
+} */
+/* 
 .logo {
   font-size: 2rem;
 }
 
 .logo:hover {
   cursor: default;
-}
+} */ */
 
 /* HAMBURGER MENU */
 
-#hamburger-nav {
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+nav label {
+  background-color: #69D2e7;
+}
+
+
+nav label .menu {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: #ba0808;
+  border-radius: 50% 50% 50% 50%;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  cursor: pointer;
+  z-index: 0;
+}
+
+nav label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: #69D2e7;
+  display: block;
+  transform-origin: center;
+  transition: .5s ease-in-out;
+}
+
+nav label .hamburger:after,
+nav label .hamburger:before {
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #69d2e7;
+}
+
+nav label .hamburger:before {
+  top: -10px;
+}
+
+nav label .hamburger:after {
+  bottom: -10px;
+}
+
+nav label input:checked+.menu {
+  box-shadow: 0 0 0 10vw #FFF,
+              0 0 0 10vh #FFF;
+  border-radius: 50%;
+  background-color: #FFF;
+
+}
+
+nav label input:checked+.menu .hamburger {
+  transform: rotate(45deg);
+}
+
+nav label input:checked+.menu .hamburger:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+nav label input:checked+.menu .hamburger:before {
+  transform: rotate(90deg);
+  top: 0;
+
+}
+
+nav ul{
+  list-style: none;
+  opacity: 1;
+}
+
+nav ul li {
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #7d0606;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+  transform: translateY(100px);
+  z-index: 100;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #7d0606;
+}
+
+nav label input:checked+.menu-links li a{
+  color: #140f0f;
+}
+
+/* nav label input:checked + nav ul li {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: .5s ease-in-out;
+  background-color: black;
+} */
+
+
+
+/* 
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: #69D2e7;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+} */
+
+/* #hamburger-nav {
   display: none;
 }
 
@@ -144,10 +275,10 @@ a:hover {
 
 .hamburger-icon span:first-child {
   transform: none;
-}
+} */
 
 /* SECTIONS */
-
+/* 
 section {
   padding-top: 4vh;
   height: 96vh;
@@ -161,7 +292,7 @@ section {
 }
 
 /* PROFILE SECTION */
-
+/*
 #profile {
   display: flex;
   justify-content: center;
@@ -179,8 +310,8 @@ section {
 
 .section__pic-container img {
   display: inline;
-  width: clamp(200px,45vw,25vw);
-  height: clamp(200px,45vw,25vw);
+  width: clamp(200px, 45vw, 25vw);
+  height: clamp(200px, 45vw, 25vw);
   border-radius: 50%;
 
   object-fit: cover;
@@ -222,9 +353,9 @@ section {
   cursor: pointer;
   height: 2rem;
 }
-
+*/
 /* BUTTONS */
-
+/*
 .btn-container {
   display: flex;
   justify-content: center;
@@ -270,9 +401,9 @@ section {
 .btn-container {
   gap: 1rem;
 }
-
+*/
 /* ABOUT SECTION */
-
+/*
 #about {
   position: relative;
 }
@@ -323,9 +454,9 @@ section {
   width: 400px;
   margin: auto 0;
 }
-
+*/
 /* EXPERIENCE SECTION */
-
+/*
 #experience {
   position: relative;
 }
@@ -362,9 +493,9 @@ article {
 article .icon {
   cursor: default;
 }
-
+*/
 /* PROJECTS SECTION */
-
+/*
 #projects {
   position: relative;
 }
@@ -389,9 +520,9 @@ article .icon {
   color: black;
   border-color: rgb(163, 163, 163);
 }
-
+*/
 /* CONTACT */
-
+/*
 #contact {
   display: flex;
   justify-content: center;
@@ -429,9 +560,9 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
-
+*/
 /* FOOTER SECTION */
-
+/*
 footer {
   height: 26vh;
   margin: 0 1rem;
@@ -439,4 +570,4 @@ footer {
 
 footer p {
   text-align: center;
-}
+} */
